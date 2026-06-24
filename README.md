@@ -2,7 +2,7 @@
 
 `Técnico em Informática - Grau Técnico Venda Nova II`
 
-`3º Módulo - Desenvolvimento Front-end`
+`3º Módulo - Desenvolvimento Front-end (HTML, CSS, JavaScript)`
 
 `Turma: INF08-M`
 
