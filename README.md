@@ -10,4 +10,7 @@
 - Mateus Vitor Augusto dos Santos
 -  Ícaro dos Santos Costa
 
+## Orientador
+- Emmanuel Vinicius Martins
+
 ## Documentação
