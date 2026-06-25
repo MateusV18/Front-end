@@ -1,7 +1,3 @@
-# Exercício 1 - Parte 3: HTML Básico
-
-Este repositório contém a resolução da Parte 3 do Exercício 1, focada na estruturação de uma página web utilizando elementos básicos do HTML.
-
 ## Explicação das Tags Utilizadas
 
 Abaixo está a descrição do papel de cada tag HTML implementada neste projeto:
