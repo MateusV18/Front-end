@@ -1,7 +1,3 @@
-# Parte 2 - Estrutura de Projeto
-
-Este repositório contém a estrutura inicial organizada para o desenvolvimento de uma aplicação web front-end. O objetivo principal é separar as responsabilidades de cada arquivo e pasta, seguindo as boas práticas de desenvolvimento de software.
-
 ## Estrutura de Pastas e Arquivos
 
 Abaixo está a explicação detalhada de cada componente criado nesta subpasta:
