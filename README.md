@@ -17,4 +17,5 @@
 
 <ol>
   <li><a href="Exercício-01">Exercício 01</a></li>
+  <li><a href="Exercício-02">Exercício 02</a></li>
 </ol>
