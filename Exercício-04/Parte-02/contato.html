@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechStore - Teclado Mecânico Aurora</title>
+  <title>TechStore - Contato</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,26 +13,36 @@
       <nav>
         <ul>
           <li><a href="index.html">Início</a></li>
-          <li><a href="produtos.html" class="active">Produtos</a></li>
-          <li><a href="contato.html">Contato</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="contato.html" class="active">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <div class="product-detail">
-      <div>
-        <h2>Teclado Mecânico Aurora</h2>
-        <p>Imagem ilustrativa do produto (Placeholder)</p>
-      </div>
-      <div class="product-info">
-        <h1>Teclado Mecânico Aurora</h1>
-        <div class="price">R$ 349,90</div>
-        <p><strong>Descrição Completa:</strong> O Teclado Mecânico Aurora foi desenvolvido para entusiastas e profissionais que exigem precisão e conforto na digitação. Equipado com switches mecânicos de alta durabilidade, possui iluminação LED RGB configurável por software, estrutura em alumínio escovado e tecnologia anti-ghosting em todas as teclas.</p>
-        <p><strong>Especificações Técnicas:</strong> Conexão USB Type-C removível, layout ABNT2, vida útil de 50 milhões de cliques.</p>
-        <a href="contato.html" class="btn">Demonstrar Interesse</a>
-      </div>
+    <div class="contact-container">
+      <h1>Entre em Contato</h1>
+      <p>Tem dúvidas sobre nossos produtos ou deseja fazer um orçamento? Preencha o formulário abaixo ou utilize nossos canais de atendimento.</p>
+      
+      <form action="#" method="GET" onsubmit="event.preventDefault(); alert('Formulário visual enviado com sucesso! (Demonstração do Exercício 4)');">
+        <div class="form-group">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Mensagem / Interesse no Produto</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Escreva sua dúvida ou produto de interesse..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Enviar Mensagem</button>
+      </form>
     </div>
   </main>
 
