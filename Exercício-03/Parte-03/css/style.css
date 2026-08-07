@@ -1,0 +1,205 @@
+/* ==========================================================================
+   IDENTIDADE VISUAL - PALETA DE CORES (TAREFA 1)
+   --------------------------------------------------------------------------
+   • Cor Principal:          #CC0000 (Vermelho)
+   • Cor de Destaque:        #FFCB05 (Amarelo)
+   • Cor de Suporte (Hero):  #2A75BB (Azul)
+   • Cor de Fundo Clara:     #F8FAFC (Cinza Claro/Gelo)
+   • Cor de Fundo Alternada: #E2E8F0 (Cinza Neutro Claro)
+   • Cor Escura para Texto:  #1E293B (Grafite / Slate Dark)
+   ========================================================================== */
+
+/* 1. RESET BÁSICO E CONFIGURAÇÕES GERAIS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Rolagem suave ao clicar nos links do menu */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fafc; /* Cor de fundo clara */
+  color: #1e293b;            /* Cor escura para textos principais */
+  line-height: 1.7;
+}
+
+/* 2. CLASSES REUTILIZÁVEIS E ESPAÇAMENTOS (TAREFA 2 E 3) */
+
+/* Limita largura centralizando o conteúdo */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem; /* Margem interna para evitar encostar nas bordas da tela */
+}
+
+/* Espaçamento vertical para separação confortável entre seções */
+.secao {
+  padding: 5rem 0; /* Padding amplo para leitura confortável */
+}
+
+/* Seção alternada para criar contraste visual */
+.secao-alt {
+  background-color: #e2e8f0;
+  border-top: 1px solid #cbd5e1;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+/* BOTÃO PRINCIPAL (TAREFA 4) */
+.botao-principal {
+  display: inline-block;
+  background-color: #ffcb05; /* Cor forte de destaque */
+  color: #111111;            /* Texto escuro com alto contraste e legibilidade */
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.25s ease-in-out;
+}
+
+.botao-principal:hover {
+  background-color: #e6b800;
+  transform: translateY(-2px); /* Efeito suave ao passar o mouse */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* CARDS DE BENEFÍCIOS (TAREFA 3 E 4) */
+.cards-grid {
+  display: flex;
+  gap: 2rem;               /* Espaçamento interno entre os cards */
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.card {
+  flex: 1;
+  min-width: 260px;
+  background-color: #ffffff; /* Fundo branco limpo */
+  padding: 2rem;            /* Espaçamento interno amplo */
+  border-radius: 12px;       /* Bordas arredondadas */
+  border-top: 5px solid #cc0000; /* Borda superior na cor principal */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06); /* Sombra suave para elevação */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #cc0000;            /* Título do card na cor principal */
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;   /* Margem para afastar do parágrafo */
+}
+
+.card p {
+  color: #475569;            /* Texto com cor levemente mais suave */
+  font-size: 0.95rem;
+}
+
+/* 3. ESTILIZAÇÃO DE COMPONENTES E SEÇÕES ESPECÍFICAS */
+
+/* Cabeçalho */
+header {
+  background-color: #cc0000; /* Cor principal */
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 4px solid #111111;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #ffcb05;             /* Cor de destaque */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.8rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #ffcb05;             /* Destaque ao passar o mouse */
+}
+
+/* Seção Início (Hero) */
+#inicio {
+  background-color: #2a75bb; /* Cor de suporte */
+  color: #ffffff;
+  text-align: center;
+  padding: 6rem 0;           /* Espaçamento amplo no Hero */
+}
+
+#inicio h1 {
+  color: #ffcb05;             /* Cor de destaque */
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#inicio p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto 2.5rem auto; /* Afasta o texto do botão principal */
+  color: #f1f5f9;
+}
+
+/* Títulos das Seções */
+h2 {
+  color: #cc0000;             /* Cor principal nos títulos */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Seção Contato */
+#contato {
+  text-align: center;
+}
+
+#contato p {
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin: 0 auto 2rem auto;
+  color: #334155;
+}
+
+/* Rodapé */
+footer {
+  background-color: #111111;
+  color: #94a3b8;
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 4px solid #cc0000;
+}
+
+footer strong {
+  color: #ffcb05;
+}
