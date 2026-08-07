@@ -1,0 +1,61 @@
+/* ================================================================= *
+   MercadoTech - Estilos Customizados
+   Arquivo externo obrigatório: assets/css/style.css
+   Evolução Parte 2: Aprimoramento de layout responsivo e cartões
+   ================================================================= */
+
+:root {
+  --mercadotech-primary: #0d6efd;
+  --mercadotech-dark: #212529;
+  --mercadotech-light: #f8f9fa;
+  --mercadotech-accent: #6610f2;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+/* Navbar Customizada */
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Seção Hero / Apresentação Institucional */
+.hero-section {
+  background: linear-gradient(135deg, rgba(13, 110, 253, 0.05) 0%, rgba(102, 16, 242, 0.08) 100%);
+  padding: 80px 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.hero-title {
+  font-weight: 800;
+  color: var(--mercadotech-dark);
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: #555555;
+}
+
+/* Cards de Destaque e Categorias */
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(13, 110, 253, 0.12);
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--mercadotech-dark);
+  color: #ffffff;
+  padding: 40px 0 20px 0;
+}
