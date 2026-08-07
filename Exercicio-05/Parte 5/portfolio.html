@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio — Verde Vida</title>
+  <meta name="description" content="Portfólio do projeto da loja virtual Verde Vida.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ==================== HEADER ==================== -->
+  <header class="cabecalho">
+    <div class="container cabecalho__conteudo">
+      <a href="index.html" class="cabecalho__logo">
+        <span class="cabecalho__icone">&#127793;</span> Verde Vida
+      </a>
+      <p class="cabecalho__slogan">Cultive momentos, colha bem-estar.</p>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-hamburguer" aria-label="Abrir menu">
+        <span class="menu-hamburguer__barra"></span>
+        <span class="menu-hamburguer__barra"></span>
+        <span class="menu-hamburguer__barra"></span>
+      </label>
+      <nav class="cabecalho__nav" aria-label="Navegação principal">
+        <ul class="cabecalho__lista">
+          <li><a href="index.html" class="cabecalho__link">Início</a></li>
+          <li><a href="produtos.html" class="cabecalho__link">Produtos</a></li>
+          <li><a href="portfolio.html" class="cabecalho__link cabecalho__link--ativo">Portfólio</a></li>
+          <li><a href="contato.html" class="cabecalho__link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== PORTFÓLIO ==================== -->
+  <main class="secao">
+    <div class="container">
+      <h1 class="secao__titulo">Portfólio — Loja Virtual Verde Vida</h1>
+
+      <section class="portfolio">
+        <h2 class="portfolio__subtitulo">Apresentação</h2>
+        <p class="portfolio__texto">
+          Este portfólio apresenta o projeto <strong>Verde Vida</strong>, desenvolvido
+          pela equipe de desenvolvimento front-end como exercício prático de criação
+          de uma loja virtual responsiva do zero, sem uso de frameworks ou JavaScript.
+        </p>
+
+        <h2 class="portfolio__subtitulo">O projeto e o tema escolhido</h2>
+        <p class="portfolio__texto">
+          A Verde Vida é uma loja fictícia de <strong>plantas e jardinagem</strong>,
+          cujo objetivo é oferecer plantas selecionadas, vasos artesanais, substratos
+          e acessórios de iluminação solar para quem deseja criar um cantinho verde em
+          casa. O tema foi escolhido por permitir uma identidade visual rica em tons de verde e âmbar, que transmitem frescor, natureza e bem-estar.
+        </p>
+        <p class="portfolio__texto">
+          O projeto evoluiu em 5 partes: da estrutura base com variáveis CSS, passando
+          pela home e pelo portfólio inicial, pela galeria com páginas individuais de
+          produto, pelo menu responsivo e media queries, até a finalização com
+          interações visuais e acessibilidade.
+        </p>
+
+        <h2 class="portfolio__subtitulo">Tecnologias utilizadas</h2>
+        <ul class="portfolio__lista">
+          <li><strong>HTML5</strong> — estrutura semântica com header, main, section, article, nav e footer.</li>
+          <li><strong>CSS3 externo</strong> — todo o estilo centralizado no arquivo css/style.css, sem CSS inline ou interno.</li>
+        </ul>
+
+        <h2 class="portfolio__subtitulo">Decisões de responsividade</h2>
+        <ul class="portfolio__lista">
+          <li><strong>Mobile First:</strong> os estilos base atendem primeiro aos dispositivos móveis, com aprimoramentos progressivos para telas maiores.</li>
+          <li><strong>Media Queries:</strong> breakpoints em 768px (tablets) e 1024px (desktops) para ajustar layouts e tipografia.</li>
+          <li><strong>CSS Grid:</strong> galeria de produtos em 1 coluna no mobile, 2 no tablet e 3 no desktop.</li>
+          <li><strong>Flexbox:</strong> alinhamentos do header, hero, página de detalhe e rodapé.</li>
+          <li><strong>Menu responsivo sem JavaScript:</strong> abertura do menu hambúrguer controlada por input checkbox e o seletor :checked.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- ==================== RODAPÉ ==================== -->
+  <footer class="rodape">
+    <div class="container rodape__conteudo">
+      <div class="rodape__coluna">
+        <h4 class="rodape__titulo">Verde Vida</h4>
+        <p class="rodape__texto">Sua loja online de plantas e artigos de jardinagem. Cultive momentos, colha bem-estar.</p>
+      </div>
+      <div class="rodape__coluna">
+        <h4 class="rodape__titulo">Navegação</h4>
+        <ul class="rodape__lista">
+          <li><a href="index.html" class="rodape__link">Início</a></li>
+          <li><a href="produtos.html" class="rodape__link">Produtos</a></li>
+          <li><a href="portfolio.html" class="rodape__link">Portfólio</a></li>
+          <li><a href="contato.html" class="rodape__link">Contato</a></li>
+        </ul>
+      </div>
+      <div class="rodape__coluna">
+        <h4 class="rodape__titulo">Contato</h4>
+        <p class="rodape__texto">Rua das Palmeiras, 123 — Jardim Verde</p>
+        <p class="rodape__texto">contato@verdevida.com.br</p>
+        <p class="rodape__texto">(11) 90000-0000</p>
+      </div>
+      <p class="rodape__direitos">&copy; 2026 Verde Vida. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

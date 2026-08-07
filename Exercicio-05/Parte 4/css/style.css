@@ -1,0 +1,511 @@
+/* ============================================================
+   Verde Vida - Loja de Plantas e Jardinagem
+   css/style.css — estilo externo (Mobile First)
+   ============================================================ */
+
+/* Importação da fonte Google Fonts (permitido em CSS externo) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ------------------------------------------------------------
+   Variáveis CSS personalizadas — identidade visual da loja
+   ------------------------------------------------------------ */
+:root {
+  --cor-primaria: #2e7d32;       /* verde floresta — marca, botões, títulos */
+  --cor-primaria-escura: #1b5e20; /* verde escuro — hover de botões, rodapé */
+  --cor-secundaria: #a5d6a7;      /* verde claro — fundos suaves, destaques */
+  --cor-accent: #f9a825;          /* âmbar — destaques e CTAs secundários */
+  --cor-fundo: #f5f7f5;           /* off-white esverdeado — fundo geral */
+  --cor-texto: #2c3e2d;           /* verde-escuro — texto principal */
+  --cor-texto-claro: #6b7a6c;     /* texto secundário */
+  --cor-branco: #ffffff;          /* branco puro */
+  --fonte-principal: 'Poppins', sans-serif;
+}
+
+/* ------------------------------------------------------------
+   Reset básico
+   ------------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  overflow-x: hidden; /* evita rolagem horizontal indevida */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-primaria);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.3;
+  color: var(--cor-primaria-escura);
+}
+
+p {
+  color: var(--cor-texto);
+}
+
+/* ------------------------------------------------------------
+   Estrutura-base (será expandida nas próximas partes)
+   ------------------------------------------------------------ */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+/* ============================================================
+   PARTE 2 — Header, Hero, Destaques e Rodapé (Mobile First)
+   ============================================================ */
+
+/* -------- Cabeçalho -------- */
+.cabecalho {
+  background-color: var(--cor-branco);
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.12);
+}
+
+.cabecalho__conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.cabecalho__logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--cor-primaria-escura);
+}
+
+.cabecalho__icone {
+  font-size: 1.6rem;
+}
+
+.cabecalho__slogan {
+  color: var(--cor-texto-claro);
+  font-size: 0.9rem;
+}
+
+.cabecalho__lista {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cabecalho__link {
+  display: block;
+  padding: 0.75rem 0;
+  color: var(--cor-texto);
+  font-weight: 500;
+}
+
+.cabecalho__link--ativo {
+  color: var(--cor-primaria);
+  font-weight: 600;
+  border-bottom: 3px solid var(--cor-accent);
+}
+
+/* -------- Hero -------- */
+.hero {
+  background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-primaria-escura) 100%);
+  color: var(--cor-branco);
+}
+
+.hero__conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.hero__titulo {
+  color: var(--cor-branco);
+  font-size: 1.8rem;
+}
+
+.hero__subtitulo {
+  color: var(--cor-secundaria);
+  font-size: 1.05rem;
+}
+
+/* -------- Botões -------- */
+.botao {
+  display: inline-block;
+  background-color: var(--cor-accent);
+  color: var(--cor-primaria-escura);
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.botao--secundario {
+  background-color: transparent;
+  color: var(--cor-primaria);
+  border: 2px solid var(--cor-primaria);
+}
+
+/* -------- Seções -------- */
+.secao {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.secao__titulo {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.secao__texto {
+  color: var(--cor-texto-claro);
+}
+
+/* -------- Destaques -------- */
+.destaques {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.destaques__titulo {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.destaques__grid {
+  display: flex;
+  flex-direction: column; /* coluna única no mobile */
+  gap: 1.5rem;
+}
+
+.destaques__acao {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* -------- Cards -------- */
+.card {
+  background-color: var(--cor-branco);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.1);
+  overflow: hidden;
+}
+
+.card__imagem {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+.card__imagem--1 {
+  background-color: var(--cor-secundaria);
+}
+
+.card__imagem--2 {
+  background-color: #c8e6c9;
+}
+
+.card__imagem--3 {
+  background-color: #ffe0b2;
+}
+
+.card__corpo {
+  padding: 1.25rem;
+}
+
+.card__titulo {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.card__descricao {
+  color: var(--cor-texto-claro);
+  font-size: 0.95rem;
+}
+
+.card__preco {
+  margin-top: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--cor-primaria);
+}
+
+/* -------- Rodapé -------- */
+.rodape {
+  background-color: var(--cor-primaria-escura);
+  color: var(--cor-secundaria);
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.rodape__conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.rodape__titulo {
+  color: var(--cor-branco);
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.rodape__texto {
+  color: var(--cor-secundaria);
+  font-size: 0.9rem;
+}
+
+.rodape__lista {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.rodape__link {
+  color: var(--cor-secundaria);
+  font-size: 0.9rem;
+}
+
+.rodape__direitos {
+  color: var(--cor-secundaria);
+  font-size: 0.85rem;
+  text-align: center;
+  border-top: 1px solid rgba(165, 214, 167, 0.3);
+  padding-top: 1rem;
+}
+
+/* -------- Portfólio -------- */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.portfolio__subtitulo {
+  font-size: 1.25rem;
+  color: var(--cor-primaria);
+}
+/* ============================================================
+   PARTE 3 — Galeria (CSS Grid Mobile First) e Página de Detalhe
+   ============================================================ */
+
+/* -------- Galeria: 1 coluna no mobile, 2 no tablet, 3 no desktop -------- */
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile: 1 coluna */
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card__detalhes {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* -------- Página de detalhe do produto -------- */
+.produto__voltar {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--cor-primaria);
+  font-weight: 600;
+}
+
+.produto {
+  display: flex;
+  flex-direction: column; /* mobile: empilhado */
+  gap: 2rem;
+  background-color: var(--cor-branco);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.1);
+  padding: 1.5rem;
+}
+
+.produto__imagem {
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  border-radius: 0.75rem;
+}
+
+.produto__imagem--1 { background-color: var(--cor-secundaria); }
+.produto__imagem--2 { background-color: #c8e6c9; }
+.produto__imagem--3 { background-color: #ffe0b2; }
+.produto__imagem--4 { background-color: #d7ccc8; }
+.produto__imagem--5 { background-color: #fff9c4; }
+
+.produto__titulo {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.produto__preco {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--cor-primaria);
+  margin-bottom: 1rem;
+}
+
+.produto__descricao {
+  margin-bottom: 1rem;
+  color: var(--cor-texto);
+}
+
+.produto__caracteristicas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding-left: 1rem;
+}
+
+.produto__caracteristicas li {
+  list-style: disc;
+  color: var(--cor-texto);
+  font-size: 0.95rem;
+}
+/* ============================================================
+   PARTE 4 — Menu responsivo (checkbox) e Media Queries
+   ============================================================ */
+
+/* -------- Menu hambúrguer (mobile) -------- */
+.menu-toggle {
+  display: none; /* checkbox invisível, usado apenas como gatilho CSS */
+}
+
+.menu-hamburguer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32px;
+  height: 24px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.menu-hamburguer__barra {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--cor-primaria);
+  border-radius: 2px;
+}
+
+/* Menu empilhado em mobile: oculto até abrir via checkbox */
+.cabecalho__nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.menu-toggle:checked ~ .cabecalho__nav {
+  max-height: 400px;
+}
+
+/* -------- Tablet: 768px -------- */
+@media (min-width: 768px) {
+  /* ocultar ícone hambúrguer */
+  .menu-hamburguer {
+    display: none;
+  }
+
+  /* menu sempre visível e horizontal */
+  .cabecalho__nav {
+    max-height: none;
+  }
+
+  .cabecalho__lista {
+    flex-direction: row;
+    gap: 1.25rem;
+  }
+
+  .cabecalho__link {
+    padding: 0.75rem;
+  }
+
+  /* galeria em 2 colunas */
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* página de detalhe: layout lado a lado */
+  .produto {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+
+  .produto__imagem {
+    flex: 1;
+    height: 320px;
+  }
+
+  .produto__info {
+    flex: 1;
+  }
+}
+
+/* -------- Desktop: 1024px -------- */
+@media (min-width: 1024px) {
+  /* galeria em 3 colunas */
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* tipografia ajustada para telas grandes */
+  .hero__titulo {
+    font-size: 2.8rem;
+  }
+
+  .hero__subtitulo {
+    font-size: 1.2rem;
+    max-width: 600px;
+  }
+
+  .secao__titulo {
+    font-size: 2rem;
+  }
+
+  .cabecalho__conteudo {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .cabecalho__logo {
+    font-size: 1.8rem;
+  }
+
+  .cabecalho__slogan {
+    display: none; /* slogan oculto em desktop para limpar o header */
+  }
+}

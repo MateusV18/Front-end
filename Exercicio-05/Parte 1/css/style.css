@@ -1,0 +1,77 @@
+/* ============================================================
+   Verde Vida - Loja de Plantas e Jardinagem
+   css/style.css — estilo externo (Mobile First)
+   ============================================================ */
+
+/* Importação da fonte Google Fonts (permitido em CSS externo) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ------------------------------------------------------------
+   Variáveis CSS personalizadas — identidade visual da loja
+   ------------------------------------------------------------ */
+:root {
+  --cor-primaria: #2e7d32;       /* verde floresta — marca, botões, títulos */
+  --cor-primaria-escura: #1b5e20; /* verde escuro — hover de botões, rodapé */
+  --cor-secundaria: #a5d6a7;      /* verde claro — fundos suaves, destaques */
+  --cor-accent: #f9a825;          /* âmbar — destaques e CTAs secundários */
+  --cor-fundo: #f5f7f5;           /* off-white esverdeado — fundo geral */
+  --cor-texto: #2c3e2d;           /* verde-escuro — texto principal */
+  --cor-texto-claro: #6b7a6c;     /* texto secundário */
+  --cor-branco: #ffffff;          /* branco puro */
+  --fonte-principal: 'Poppins', sans-serif;
+}
+
+/* ------------------------------------------------------------
+   Reset básico
+   ------------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  overflow-x: hidden; /* evita rolagem horizontal indevida */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-primaria);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.3;
+  color: var(--cor-primaria-escura);
+}
+
+p {
+  color: var(--cor-texto);
+}
+
+/* ------------------------------------------------------------
+   Estrutura-base (será expandida nas próximas partes)
+   ------------------------------------------------------------ */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
