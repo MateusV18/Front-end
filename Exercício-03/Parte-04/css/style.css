@@ -1,0 +1,226 @@
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS E TIPOGRAFIA (TAREFA 1, 3 E 4)
+   ========================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Aplicação da fonte Poppins no Body (Tarefa 3) */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  line-height: 1.7;
+  font-size: 1rem;
+  font-weight: 400; /* Peso normal para leitura */
+}
+
+/* ==========================================================================
+   CLASSES REUTILIZÁVEIS E LAYOUT (TAREFA 5)
+   ========================================================================== */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.secao {
+  padding: 5rem 0;
+}
+
+.secao-alt {
+  background-color: #e2e8f0;
+  border-top: 1px solid #cbd5e1;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+/* HIERARQUIA: Parágrafos Gerais (Tarefa 4) */
+p {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #334155;
+  margin-bottom: 1rem;
+}
+
+/* HIERARQUIA: Títulos Gerais h2 (Tarefa 4) */
+h2 {
+  color: #cc0000;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.25rem;
+}
+
+/* HIERARQUIA: Botão Principal (Tarefa 4) */
+.botao-principal {
+  display: inline-block;
+  background-color: #ffcb05;
+  color: #111111;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700; /* Peso em destaque */
+  padding: 0.9rem 2.2rem;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.25s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.botao-principal:hover {
+  background-color: #e6b800;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* CARDS DE BENEFÍCIOS (TAREFA 5) */
+.cards-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.card {
+  flex: 1;
+  min-width: 260px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  border-top: 5px solid #cc0000;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #cc0000;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   COMPONENTES ESPECÍFICOS
+   ========================================================================== */
+
+/* HEADER E MENU (TAREFA 4) */
+header {
+  background-color: #cc0000;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 4px solid #111111;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800; /* Extra bold para a marca */
+  color: #ffcb05;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.8rem;
+}
+
+/* HIERARQUIA: Links do Menu (Tarefa 4) */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600; /* Peso intermediário */
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #ffcb05;
+}
+
+/* HERO SECTION / INÍCIO (TAREFA 4 E 5) */
+#inicio {
+  background-color: #2a75bb;
+  color: #ffffff;
+  text-align: center;
+  padding: 6.5rem 0;
+}
+
+/* HIERARQUIA: h1 da Seção Hero (Tarefa 4) */
+#inicio h1 {
+  color: #ffcb05;
+  font-size: 2.8rem;
+  font-weight: 800; /* Destaque máximo na frase principal */
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.35);
+}
+
+#inicio p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #f1f5f9;
+  max-width: 720px;
+  margin: 0 auto 2.5rem auto;
+}
+
+/* SEÇÃO CONTATO */
+#contato {
+  text-align: center;
+}
+
+#contato p {
+  max-width: 650px;
+  margin: 0 auto 2rem auto;
+}
+
+/* RODAPÉ */
+footer {
+  background-color: #111111;
+  color: #94a3b8;
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 4px solid #cc0000;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-bottom: 0;
+}
+
+footer strong {
+  color: #ffcb05;
+  font-weight: 600;
+}
