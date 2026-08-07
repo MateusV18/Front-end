@@ -1,0 +1,20 @@
+/* ==========================================================
+   TechStore - Exercicio 4
+   Parte 1: Planejamento e estrutura inicial
+   ----------------------------------------------------------
+   Nesta etapa o CSS ainda nao foi estilizado. O objetivo aqui
+   e apenas garantir que todos os arquivos HTML estao ligados
+   corretamente a este arquivo externo (link rel="stylesheet").
+   O layout com Flexbox sera adicionado na Parte 2.
+   ========================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
